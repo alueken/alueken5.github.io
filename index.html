@@ -1,5 +1,153 @@
-<html>
-  <body>
-    <h1>Welcome to Mr. Lueken's Portfolio</h1>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Lueken | Data Structures Portfolio</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #0d0d0d;
+        color: #00faff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        background: linear-gradient(90deg, #000000, #111111);
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-bottom: 2px solid #00faff;
+        text-shadow: 0 0 10px #00faff, 0 0 20px #00faff;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        color: #00faff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 10px #ff00ff;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        border: 2px solid #00faff;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #00faff;
+    }
+
+    .profile-pic {
+        display: block;
+        margin: 20px auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 3px solid #00faff;
+        box-shadow: 0 0 15px #00faff, 0 0 30px #ff00ff;
+    }
+
+    h2 {
+        text-align: center;
+        text-shadow: 0 0 10px #ff00ff;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        background: #111111;
+        border: 2px solid #00faff;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ff00ff;
+    }
+
+    .contact-links a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 1.2rem;
+        color: #00faff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-links a:hover {
+        color: #ff00ff;
+    }
+
+    footer {
+        margin: 40px 0;
+        font-size: 1rem;
+        text-align: center;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    Adam Lueken | Data Structures Portfolio
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <img src="your-photo.png" alt="Adam Lueken" class="profile-pic">
+    <h2>About Me</h2>
+    <p style="text-align:center;">Hi, I'm Adam Lueken, a Computer Science teacher passionate about Data Structures, Python development, and mentoring future developers. This portfolio showcases my work, labs, and projects.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects & Data Structure Labs</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Linked List Implementation</h3>
+            <p>A complete implementation of a singly linked list in Python.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Stack & Queue</h3>
+            <p>Custom stack and queue classes with real-world use cases.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Binary Search Tree</h3>
+            <p>Efficient tree traversal and search methods in Python.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
